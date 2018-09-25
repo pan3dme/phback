@@ -1,8 +1,8 @@
 {
 "levelitem":[10001,10002,10003,10004,10005,10006,10007,10008 ,10009 ],
-"addtimeitem":[{"mapuid":10001,"addtime":5},{"mapuid":10002,"addtime":5},{"mapuid":10003,"addtime":5},{"mapuid":10004,"addtime":5},{"mapuid":10005,"addtime":5},{"mapuid":10006,"addtime":6}],
+"addtimeitem":[{"mapuid":10001,"addtime":5},{"mapuid":10002,"addtime":5},{"mapuid":10003,"addtime":5},{"mapuid":10004,"addtime":5},{"mapuid":10005,"addtime":5},{"mapuid":10006,"addtime":6},{"mapuid":10007,"addtime":7},{"mapuid":10008,"addtime":8},{"mapuid":10009,"addtime":9}],
 "maxtime":30,
-"timefinishrealplaynum":5,
+"timefinishrealplaynum":1,
 "waitrevivetime":20
  
 
