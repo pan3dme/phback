@@ -1,0 +1,353 @@
+{"tabels":[
+
+{"name":"1","list":[
+{"id":1,"x":179,"y":12,"z":5}
+]},
+
+{"name":"2","list":[
+{"id":1,"x":0,"y":10,"z":-80}
+]},
+
+{"name":"3","list":[
+{"id":1,"x":264,"y":48,"z":-6}
+]},
+
+{"name":"4","list":[
+{"id":1,"x":-242,"y":3,"z":4}
+]},
+
+{"name":"5","list":[
+{"id":1,"x":244,"y":15,"z":188}
+]},
+
+{"name":"6","list":[
+{"id":1,"x":139,"y":10,"z":26},
+{"id":2,"x":490,"y":5,"z":-35}
+]},
+
+{"name":"7","list":[
+{"id":1,"x":-290,"y":25,"z":65},
+{"id":2,"x":-335,"y":25,"z":215}
+]},
+
+
+
+{"name":"8","list":[
+{"id":1,"x":261,"y":21,"z":-4}
+]},
+
+
+{"name":"9","list":[
+{"id":1,"x":123,"y":15,"z":0}
+]},
+
+
+{"name":"10","list":[
+{"id":1,"x":60,"y":23,"z":-75}
+]},
+
+
+{"name":"11","list":[
+{"id":1,"x":61,"y":-545,"z":5}
+]},
+
+
+
+{"name":"12","list":[
+{"id":1,"x":205,"y":31,"z":1}
+]},
+
+
+
+{"name":"14","list":[
+{"id":1,"x":458,"y":35,"z":0},
+{"id":2,"x":445,"y":33,"z":-324}
+
+ 
+]},
+
+{"name":"15","list":[
+{"id":1,"x":-96,"y":19,"z":-5},
+{"id":2,"x":-480,"y":-90,"z":-43}
+]},
+
+
+{"name":"16","list":[
+{"id":1,"x":-175,"y":20,"z":128},
+{"id":2,"x":-175,"y":20,"z":-128},
+{"id":3,"x":-433,"y":20,"z":128},
+{"id":4,"x":-433,"y":20,"z":-128}
+]},
+
+{"name":"17","list":[
+{"id":1,"x":233,"y":5,"z":0},
+{"id":2,"x":324,"y":-54,"z":6}
+]},
+
+{"name":"18","list":[
+{"id":1,"x":-412,"y":-48,"z":0}
+]},
+
+{"name":"19","list":[
+{"id":1,"x":320,"y":15,"z":0}
+]},
+
+{"name":"20","list":[
+{"id":1,"x":183,"y":49,"z":-132}
+]},
+
+{"name":"21","list":[
+{"id":1,"x":237,"y":21,"z":3}
+]},
+
+{"name":"22","list":[
+{"id":1,"x":100,"y":15,"z":0},
+{"id":2,"x":416,"y":17,"z":5}
+]},
+
+
+{"name":"23","list":[
+{"id":1,"x":-77,"y":18,"z":-22},
+{"id":2,"x":-143,"y":18,"z":7},
+{"id":3,"x":-185,"y":15,"z":-15}
+]},
+
+{"name":"24","list":[
+{"id":1,"x":-100,"y":15,"z":0},
+{"id":2,"x":-147,"y":18,"z":7}
+]},
+
+{"name":"25","list":[
+{"id":1,"x":173,"y":10,"z":39},
+{"id":2,"x":337,"y":9,"z":36}
+]},
+
+{"name":"26","list":[
+{"id":1,"x":129,"y":19,"z":-23}
+]},
+
+{"name":"27","list":[
+{"id":1,"x":-2,"y":23,"z":-76}
+]},
+
+{"name":"28","list":[
+{"id":1,"x":-368,"y":-93,"z":-11}
+]},
+
+{"name":"29","list":[
+{"id":1,"x":-179,"y":13,"z":-135},
+{"id":2,"x":-438,"y":13,"z":-138},
+{"id":3,"x":-179,"y":13,"z":134},
+{"id":4,"x":-438,"y":13,"z":134}
+]},
+
+{"name":"30","list":[
+{"id":1,"x":335,"y":22,"z":5}
+]},
+
+{"name":"31","list":[
+{"id":1,"x":159,"y":16,"z":-1}
+]},
+
+{"name":"32","list":[
+{"id":1,"x":147,"y":13,"z":0},
+{"id":1,"x":251,"y":13,"z":-4}
+]},
+
+{"name":"33","list":[
+{"id":1,"x":195,"y":16,"z":6}
+]},
+
+{"name":"34","list":[
+{"id":1,"x":175,"y":13,"z":-10}
+]},
+
+{"name":"35","list":[
+{"id":1,"x":191,"y":12,"z":-6}
+]},
+
+{"name":"36","list":[
+{"id":1,"x":-287,"y":11,"z":-6},
+{"id":2,"x":-294,"y":11,"z":313}
+]},
+
+{"name":"37","list":[
+{"id":1,"x":-251,"y":-28,"z":-1},
+{"id":2,"x":-417,"y":-63,"z":-5}
+]},
+
+{"name":"38","list":[
+{"id":1,"x":-287,"y":11,"z":-9},
+{"id":2,"x":-291,"y":59,"z":297}
+]},
+
+{"name":"223","list":[
+{"id":1,"x":230,"y":40,"z":0}
+]}
+
+],
+
+"restpaly":[
+{"level":1,"num":1,"waittime":3 },
+{"level":2,"num":1,"waittime":3 },
+{"level":3,"num":1 ,"waittime":3},
+{"level":4,"num":1,"waittime":3 },
+{"level":5,"num":1,"waittime":3 },
+{"level":6,"num":1,"waittime":5 },
+{"level":7,"num":1 ,"waittime":5},
+{"level":8,"num":1,"waittime":5 },
+{"level":9,"num":1,"waittime":5 },
+{"level":10,"num":1,"waittime":5 },
+{"level":11,"num":2,"waittime":6 },
+{"level":12,"num":2,"waittime":6 },
+{"level":13,"num":2 ,"waittime":6},
+{"level":14,"num":2,"waittime":6 },
+{"level":15,"num":2 ,"waittime":6},
+{"level":16,"num":3,"waittime":6 },
+{"level":17,"num":3,"waittime":6 },
+{"level":18,"num":3,"waittime":6 },
+{"level":19,"num":3 ,"waittime":6},
+{"level":20,"num":3,"waittime":6 },
+{"level":21,"num":4,"waittime":6 },
+{"level":22,"num":4,"waittime":6 },
+{"level":23,"num":4 ,"waittime":6},
+{"level":24,"num":4 ,"waittime":6},
+{"level":25,"num":4 ,"waittime":6},
+{"level":26,"num":5 ,"waittime":6},
+{"level":27,"num":5,"waittime":6 },
+{"level":28,"num":5,"waittime":6 },
+{"level":29,"num":5 ,"waittime":6},
+{"level":30,"num":5 ,"waittime":6},
+{"level":31,"num":5 ,"waittime":6},
+{"level":32,"num":5 ,"waittime":6},
+{"level":33,"num":5 ,"waittime":6},
+{"level":34,"num":5 ,"waittime":6},
+{"level":35,"num":5 ,"waittime":6},
+{"level":36,"num":5 ,"waittime":6},
+{"level":37,"num":5 ,"waittime":6},
+{"level":38,"num":5 ,"waittime":6},
+{"level":39,"num":5 ,"waittime":6},
+{"level":40,"num":5 ,"waittime":6},
+{"level":41,"num":5 ,"waittime":6},
+{"level":42,"num":5 ,"waittime":6},
+{"level":43,"num":5 ,"waittime":6},
+{"level":44,"num":5 ,"waittime":6},
+{"level":45,"num":5 ,"waittime":6},
+{"level":46,"num":5 ,"waittime":6},
+{"level":47,"num":5 ,"waittime":6},
+{"level":48,"num":5 ,"waittime":6},
+{"level":49,"num":5 ,"waittime":6},
+{"level":50,"num":5 ,"waittime":6},
+{"level":3000,"num":5 ,"waittime":6}
+],
+
+"fristreward":[
+{"level":1,"num":1 },
+{"level":2,"num":1 },
+{"level":3,"num":1 },
+{"level":4,"num":1 },
+{"level":5,"num":1 },
+{"level":6,"num":1 },
+{"level":7,"num":1 },
+{"level":8,"num":1 },
+{"level":9,"num":1 },
+{"level":10,"num":1 },
+{"level":11,"num":2 },
+{"level":12,"num":2 },
+{"level":13,"num":2 },
+{"level":14,"num":2 },
+{"level":15,"num":2 },
+{"level":16,"num":2 },
+{"level":17,"num":2 },
+{"level":18,"num":2 },
+{"level":19,"num":2 },
+{"level":20,"num":2 },
+{"level":21,"num":3 },
+{"level":22,"num":3 },
+{"level":23,"num":3 },
+{"level":24,"num":3 },
+{"level":25,"num":3 },
+{"level":26,"num":3 },
+{"level":27,"num":3 },
+{"level":28,"num":3 },
+{"level":29,"num":3 },
+{"level":30,"num":4 },
+{"level":31,"num":4 },
+{"level":32,"num":4 },
+{"level":33,"num":4 },
+{"level":34,"num":4 },
+{"level":35,"num":4 },
+{"level":36,"num":4 },
+{"level":37,"num":4 },
+{"level":38,"num":4 },
+{"level":39,"num":4 },
+{"level":40,"num":4 },
+{"level":41,"num":4 },
+{"level":42,"num":4 },
+{"level":43,"num":4 },
+{"level":44,"num":4 },
+{"level":45,"num":4 },
+{"level":46,"num":4 },
+{"level":47,"num":4 },
+{"level":48,"num":4 },
+{"level":49,"num":4 },
+{"level":50,"num":4 },
+{"level":3000,"num":3 }
+],
+
+"shareinput":[
+{"level":1,"num":5 },
+{"level":2,"num":5 },
+{"level":3,"num":5 },
+{"level":4,"num":5 },
+{"level":5,"num":5 },
+{"level":6,"num":5 },
+{"level":7,"num":5 },
+{"level":8,"num":5 },
+{"level":9,"num":5 },
+{"level":10,"num":5 },
+{"level":11,"num":10 },
+{"level":12,"num":10 },
+{"level":13,"num":10 },
+{"level":14,"num":10 },
+{"level":15,"num":10 },
+{"level":16,"num":15 },
+{"level":17,"num":15 },
+{"level":18,"num":15 },
+{"level":19,"num":15 },
+{"level":20,"num":15 },
+{"level":21,"num":20 },
+{"level":22,"num":20 },
+{"level":23,"num":20 },
+{"level":24,"num":20 },
+{"level":25,"num":20 },
+{"level":26,"num":25 },
+{"level":27,"num":25 },
+{"level":28,"num":25 },
+{"level":29,"num":25 },
+{"level":30,"num":25 },
+{"level":31,"num":30 },
+{"level":32,"num":30 },
+{"level":33,"num":30 },
+{"level":34,"num":30 },
+{"level":35,"num":30 },
+{"level":36,"num":30 },
+{"level":37,"num":30 },
+{"level":38,"num":30 },
+{"level":39,"num":30 },
+{"level":40,"num":35 },
+{"level":41,"num":35 },
+{"level":42,"num":35 },
+{"level":43,"num":35 },
+{"level":44,"num":35 },
+{"level":45,"num":35 },
+{"level":46,"num":35 },
+{"level":47,"num":35 },
+{"level":48,"num":35 },
+{"level":49,"num":35 },
+{"level":50,"num":35 },
+{"level":3000,"num":25 }
+]
+
+}
+ 
