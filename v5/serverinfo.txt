@@ -1,0 +1,8 @@
+{
+"version":5,
+"share_flag":true,
+"level":50,
+"upVideo":false,
+"endless":true,
+"skinopenlevel":10
+}
