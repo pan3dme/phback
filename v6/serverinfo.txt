@@ -20,7 +20,11 @@
 		
 		"model/genshui_base.txt",
 		"model/whiteball_base.txt",
-			
+		"model/levelup_base.txt",
+		"model/zhuanshi_base.txt",
+		"model/diamondseffect_base.txt",
+		
+
 
 		"ui/load/blood.png",
 
