@@ -50,6 +50,7 @@
 		"assets/white.jpg",
 		"pan/tenkyu/white.jpg",
 		"pan/wudiqiuqiu/white.jpg",
+		"pan/guiqiu/linshi/jianban.png",
 
 
 
