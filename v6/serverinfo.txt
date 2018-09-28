@@ -1,6 +1,6 @@
 {
 "version":5,
-"share_flag":true,
+"share_flag":false,
 "level":50,
 "upVideo":false,
 "endless":true,
