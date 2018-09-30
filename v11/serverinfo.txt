@@ -1,6 +1,6 @@
 {
 "version":5,
-"share_flag":false,
+"share_flag":true,
 "shareconfig":{"num":5,"txt":"这次真需要分享到群"},
 "level":50,
 "upVideo":false,
