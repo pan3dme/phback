@@ -1,7 +1,7 @@
 {
 "version":5,
 "share_flag":false,
-"shareconfig":{"num":5,"txt":"这次真需要分享到群"}
+"shareconfig":{"num":5,"txt":"这次真需要分享到群"},
 "level":50,
 "upVideo":false,
 "endless":true,
@@ -20,7 +20,7 @@
 		"ui/help/help.txt",
 		"ui/textlist/textlist.png",
 		"ui/textlist/textlist.txt",
-		"diamondsconfig.txt",
+	 
 		
 		"model/genshui_base.txt",
 		"model/whiteball_base.txt",

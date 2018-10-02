@@ -20,7 +20,7 @@
 		"ui/help/help.txt",
 		"ui/textlist/textlist.png",
 		"ui/textlist/textlist.txt",
-		"diamondsconfig.txt",
+	 
 		
 		"model/genshui_base.txt",
 		"model/whiteball_base.txt",
