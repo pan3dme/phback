@@ -1,0 +1,104 @@
+{
+"version":5,
+"share_flag":true,
+"shareconfig":{"num":5,"txt":"这次真需要分享到群"},
+"onlinegame":{"open":true,"playtime":180,"intervaltime":60},
+"invitation":1,
+"level":50,
+"upVideo":false,
+"endless":true,
+"skinopenlevel":10,
+"sharexml":[
+{"id":0,"txt":"根本停不下来的滚球游戏","url":"res/ui/share/share000.jpg"}
+],
+"localfile":[
+		"ui/topview/topview.png",
+		"ui/topview/topview.txt",
+		"ui/alert/alert.png",
+		"ui/alert/alert.txt",
+		"ui/endless/endless.png",
+		"ui/endless/endless.txt",
+		"ui/help/help.png",
+		"ui/help/help.txt",
+		"ui/textlist/textlist.png",
+		"ui/textlist/textlist.txt",
+	 
+		
+		"model/genshui_base.txt",
+		"model/whiteball_base.txt",
+		"model/levelup_base.txt",
+		"model/zhuanshi_base.txt",
+		"model/diamondseffect_base.txt",
+		
+
+
+		"ui/load/blood.png",
+
+		"ui/skin/skin1.png",
+		"ui/skin/skin2.png",
+		"ui/skin/skin3.png",
+		"ui/skin/skin4.png",
+		"ui/skin/skin5.png",
+		"ui/skin/skin6.png",
+		"ui/skin/skin7.png",
+		"ui/skin/skin8.png",
+		"ui/skin/skin9.png",
+		"ui/skin/skin10.png",
+
+
+		"ui/skin/skinbg.png",
+		"ui/skin/skinuse0.png",
+		"ui/skin/skinuse1.png",
+
+
+		"base/brdf_ltu.jpg",
+		"base/cube/e01.jpg",
+
+		"phy/glowwhite.jpg",
+		"phy/green.jpg",
+
+		"assets/white.jpg",
+		"pan/tenkyu/white.jpg",
+		"pan/wudiqiuqiu/white.jpg",
+		"pan/guiqiu/linshi/jianban.png",
+
+
+
+
+		"sound/basesound.mp3",
+		"sound/getdiamond.mp3",
+		"sound/lost.mp3",
+		"sound/pass.mp3",
+
+		"map/10001_base.txt",
+		"map/10002_base.txt",
+		"map/10003_base.txt",
+		"map/10004_base.txt",
+		"map/10005_base.txt",
+		"map/10006_base.txt",
+		"map/10007_base.txt",
+		"map/10008_base.txt",
+		"map/10009_base.txt",
+
+		"map/1001_base.txt",
+		"map/1002_base.txt",
+		"map/1003_base.txt",
+		"map/1004_base.txt",
+		"map/1005_base.txt",
+		"map/1006_base.txt",
+		"map/1007_base.txt",
+		"map/1008_base.txt",
+		"map/1009_base.txt",
+		"map/1010_base.txt",
+		"map/1011_base.txt",
+		"map/1012_base.txt",
+		"map/1013_base.txt",
+		"map/1014_base.txt",
+		"map/1015_base.txt",
+		"map/1016_base.txt",
+		"map/1017_base.txt",
+		"map/1018_base.txt",
+		"map/1019_base.txt",
+		"map/1020_base.txt"
+]
+}
