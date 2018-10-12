@@ -1,8 +1,8 @@
 {
 "version":5,
-"share_flag":true,
+"share_flag":false,
 "shareconfig":{"num":5,"txt":"这次真需要分享到群"},
-"onlinegame":{"open":true,"playtime":180,"intervaltime":60},
+"onlinegame":{"open":true,"playtime":180,"intervaltime":600},
 "invitation":1,
 "level":50,
 "upVideo":false,
