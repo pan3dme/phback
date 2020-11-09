@@ -16,12 +16,12 @@
     }
     public onMouseWheel($evt: MouseWheelEvent): void {
 
-        Scene_data.cam3D.distance += $evt.wheelDelta/10
+        // Scene_data.cam3D.distance += $evt.wheelDelta/10
     }
 
     private lastRotationY: number = 0;
     private lastRotationX: number = 0;
-
+ 
 
     private _lastMousePos: Vector2D = new Vector2D();
     private _isMouseDown: boolean;
