@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{2A9562D5-24A0-4F44-94C5-EADCD36C5804}|">
   <MonoDevelop.Ide.ItemProperties.shadowexp PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="shadowexp/tp/TpGame.ts">
+  <MonoDevelop.Ide.Workbench ActiveDocument="shadowexp/index.html">
     <Files>
-      <File FileName="shadowexp/index.html" Line="19" Column="23" />
-      <File FileName="shadowexp/tp/modules/mouse/ShadowMouseManager.ts" Line="89" Column="6" />
+      <File FileName="shadowexp/index.html" Line="27" Column="1" />
       <File FileName="shadowexp/tp/modules/mouse/ShadowMouseEventModel.ts" Line="47" Column="30" />
       <File FileName="shadowexp/tp/TpGame.ts" Line="12" Column="38" />
       <File FileName="shadowexp/tp/modules/TpModuleList.ts" />
@@ -12,7 +11,7 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="shadowexp" expanded="True" selected="True">
+          <Node name="shadowexp" expanded="True">
             <Node name="shadowexp" expanded="True">
               <Node name="bins" expanded="True" />
               <Node name="tp" expanded="True">
@@ -20,6 +19,7 @@
                   <Node name="mouse" expanded="True" />
                 </Node>
               </Node>
+              <Node name="index.html" selected="True" />
             </Node>
           </Node>
         </State>

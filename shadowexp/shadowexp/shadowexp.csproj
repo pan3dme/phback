@@ -33,6 +33,7 @@
     <TypeScriptCompile Include="tp\modules\scene\TpSceneProcessor.ts" />
     <TypeScriptCompile Include="tp\modules\TpModuleList.ts" />
     <TypeScriptCompile Include="tp\TpGame.ts" />
+    <TypeScriptCompile Include="tp\modules\mouse\EmptyTSFile.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">
@@ -71,6 +72,11 @@
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
   </ProjectExtensions>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
