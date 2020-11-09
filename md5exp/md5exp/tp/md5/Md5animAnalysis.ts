@@ -1,4 +1,12 @@
-﻿module md5list {
+﻿
+
+module md5list {
+    import ObjectBaseBone = Pan3d.ObjectBaseBone;
+    import Matrix3D = Pan3d.Matrix3D
+    import Quaternion = Pan3d.Quaternion
+    import Vector3D = Pan3d.Vector3D
+    import Dictionary = Pan3d.Dictionary
+    import ObjectBone = Pan3d.ObjectBone
 
     export class Md5animAnalysis {
         public allFrames: Array<Array<ObjectBone>>;

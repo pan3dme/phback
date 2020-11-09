@@ -1,5 +1,11 @@
 ﻿
 module md5list {
+    import Vector3D = Pan3d.Vector3D
+    import MeshData = Pan3d.MeshData
+    import Dictionary = Pan3d.Dictionary
+    import Scene_data = Pan3d.Scene_data
+    import ObjectBone = Pan3d.ObjectBone
+ 
 
     export class ObjectTri {
         public id: number = 0;
@@ -160,11 +166,13 @@ module md5list {
             boneWeightAry: Array<number>, bonetIDAry: Array<number>, indexAry: Array<number>): void {
 
             meshData.uvBuffer = Scene_data.context3D.uploadBuff3D(uvArray);
+            meshData.boneWeightAry = boneWeightAry
             meshData.boneWeightBuffer = Scene_data.context3D.uploadBuff3D(boneWeightAry);
             var arrA: Array<number> = new Array;
             for (var i: number = 0; i < bonetIDAry.length; i++) {
                 arrA.push(Math.max(bonetIDAry[i], 0))
             }
+            meshData.boneIDAry = arrA
             meshData.boneIdBuffer = Scene_data.context3D.uploadBuff3D(arrA);
             meshData.indexBuffer = Scene_data.context3D.uploadIndexBuff3D(indexAry);
 

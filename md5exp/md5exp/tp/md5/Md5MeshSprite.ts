@@ -1,6 +1,19 @@
 ﻿
-module md5list {
 
+module md5list {
+    import Shader3D = Pan3d.Shader3D
+    import Display3DSprite = Pan3d.Display3DSprite
+    import ProgrmaManager = Pan3d.ProgrmaManager;
+    import UIManager = Pan3d.UIManager
+    import MeshData = Pan3d.MeshData
+    import DualQuatFloat32Array = Pan3d.DualQuatFloat32Array
+    import Scene_data = Pan3d.Scene_data
+    import LoadManager = Pan3d.LoadManager
+    import TextureManager = Pan3d.TextureManager
+    import TextureRes = Pan3d.TextureRes
+    import Matrix3D = Pan3d.Matrix3D
+    import Vector3D = Pan3d.Vector3D
+    import Quaternion = Pan3d.Quaternion
     export class Md5MeshShader extends Shader3D {
         static Md5MeshShader: string = "Md5MeshShader";
         constructor() {
@@ -101,7 +114,7 @@ module md5list {
                 this.md5objData = new MeshToObjUtils().getObj(this._md5MeshData);
             });
         }
-        private md5objData: ObjData;
+        private md5objData: MeshData;
         protected loadTexture(): void {
             var $ctx: CanvasRenderingContext2D = UIManager.getInstance().getContext2D(128, 128, false);
             $ctx.fillStyle = "rgb(255,0,0)";

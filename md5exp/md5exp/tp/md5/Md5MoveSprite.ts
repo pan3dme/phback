@@ -1,5 +1,19 @@
 ﻿
 module md5list {
+    import Display3DSprite = Pan3d.Display3DSprite
+    import Shader3D = Pan3d.Shader3D
+    import ProgrmaManager = Pan3d.ProgrmaManager
+    import LoadManager = Pan3d.LoadManager
+    import ObjData = Pan3d.ObjData
+    import Quaternion = Pan3d.Quaternion
+    import DualQuatFloat32Array = Pan3d.DualQuatFloat32Array
+    import Matrix3D = Pan3d.Matrix3D
+    import UIManager = Pan3d.UIManager
+    import TextureManager = Pan3d.TextureManager
+    import TextureRes = Pan3d.TextureRes
+    import Vector3D = Pan3d.Vector3D
+    import Scene_data = Pan3d.Scene_data
+
 
     export class Md5MoveSprite extends Display3DSprite {
         private md5shader: Shader3D
@@ -9,9 +23,9 @@ module md5list {
             this.md5shader = ProgrmaManager.getInstance().getProgram(Md5MeshShader.Md5MeshShader);
             this.loadTexture();
         }
-        private md5MeshData: Md5MeshData;
-        private md5objData: ObjData;
-        private loadBodyMesh(): void {
+        public md5MeshData: Md5MeshData;
+        public md5objData: ObjData;
+        protected loadBodyMesh(): void {
             LoadManager.getInstance().load(Scene_data.fileRoot + this.bodyUrl, LoadManager.XML_TYPE, ($str: any) => {
                 this.md5MeshData = new Md5Analysis().addMesh($str);
                 new MeshImportSort().processMesh(this.md5MeshData);
@@ -32,9 +46,9 @@ module md5list {
             }
             this.loadBodyMesh();
         }
-        private frameQuestArr: Array<DualQuatFloat32Array>;
-        private loadAnimFrame(): void {
-            LoadManager.getInstance().load(Scene_data.fileRoot + this.animUrl, LoadManager.XML_TYPE, ($str: any) => {
+        public frameQuestArr: Array<DualQuatFloat32Array>;
+        protected loadAnimFrame(): void {
+            LoadManager.getInstance().load(Scene_data.fileRoot  + this.animUrl, LoadManager.XML_TYPE, ($str: any) => {
                 var $matrixAry: Array<Array<Matrix3D>> = new Md5animAnalysis().addAnim($str);
                 this.frameQuestArr = new Array;
                 for (var i: number = 0; i < $matrixAry.length; i++) {
@@ -46,7 +60,7 @@ module md5list {
                 }
             });
         }
-        private makeDualQuatFloat32Array($frameAry: Array<Matrix3D>): DualQuatFloat32Array {
+        protected makeDualQuatFloat32Array($frameAry: Array<Matrix3D>): DualQuatFloat32Array {
             var newIDBoneArr: Array<number> = this.md5MeshData.boneNewIDAry
             var baseBone: Array<Matrix3D> = $frameAry;
             var $tempDq: DualQuatFloat32Array = new DualQuatFloat32Array;
@@ -83,11 +97,17 @@ module md5list {
                 this.updateMaterialMeshCopy();
             }
         }
+
+        private lastTm: number = 0
+        private _actionTime: number=0
         public updateMaterialMeshCopy(): void {
+            
 
             this.baseShder = this.md5shader
             Scene_data.context3D.setProgram(this.baseShder.program);
             Scene_data.context3D.setVpMatrix(this.baseShder, Scene_data.vpMatrix.m);
+
+    
 
             Scene_data.context3D.setVcMatrix4fv(this.baseShder, "posMatrix3D", this.posMatrix.m);
             Scene_data.context3D.setRenderTexture(this.baseShder, "fc0", this.uvTextureRes.texture, 0);
@@ -95,9 +115,17 @@ module md5list {
             Scene_data.context3D.setVa(1, 2, this.md5MeshData.uvBuffer);
             Scene_data.context3D.setVa(2, 4, this.md5MeshData.boneIdBuffer);
             Scene_data.context3D.setVa(3, 4, this.md5MeshData.boneWeightBuffer);
+ 
+
+            var t: number = Pan3d.TimeUtil.getTimer() - this.lastTm;
+            this.lastTm = Pan3d.TimeUtil.getTimer()
+            this._actionTime += t;
+
+
+            var _curentFrame: number = float2int(this._actionTime / (Scene_data.frameTime * 2));
 
             var $len: number = this.frameQuestArr.length;
-            var $dualQuatFloat32Array: DualQuatFloat32Array = this.frameQuestArr[this.skipNum++ % $len]
+            var $dualQuatFloat32Array: DualQuatFloat32Array = this.frameQuestArr[_curentFrame % $len]
 
             Scene_data.context3D.setVc4fv(this.baseShder, "boneQ", $dualQuatFloat32Array.quat); //旋转
             Scene_data.context3D.setVc3fv(this.baseShder, "boneD", $dualQuatFloat32Array.pos);  //所有的位移

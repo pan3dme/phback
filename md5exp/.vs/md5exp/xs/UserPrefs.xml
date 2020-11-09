@@ -1,17 +1,12 @@
 ﻿<Properties StartupConfiguration="{2A9562D5-24A0-4F44-94C5-EADCD36C5804}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="md5exp/index.html">
     <Files>
-      <File FileName="md5exp/index.html" Line="15" Column="12" />
+      <File FileName="md5exp/index.html" Line="36" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="md5exp" expanded="True">
-            <Node name="md5exp" expanded="True">
-              <Node name="tp" expanded="True" />
-              <Node name="index.html" selected="True" />
-            </Node>
-          </Node>
+          <Node name="md5exp" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

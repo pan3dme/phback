@@ -1,4 +1,8 @@
-﻿class TpGame {
+﻿import SceneManager=Pan3d.SceneManager;
+import ProgrmaManager=Pan3d.ProgrmaManager;
+import LineDisplayShader=Pan3d.LineDisplayShader;
+import GridLineSprite=Pan3d.GridLineSprite;
+class TpGame {
     public static getArrByStr(str: String): Array<string> {
         var boneNameAry: Array<string> = str.split(/\s+/g);
         for (var i: number = boneNameAry.length - 1; i >= 0; i--) {

@@ -1,9 +1,15 @@
 ﻿module md5list {
+    import Matrix3D = Pan3d.Matrix3D
+    import MeshData = Pan3d.MeshData
+    import ObjectBone = Pan3d.ObjectBone
+    import Quaternion = Pan3d.Quaternion
+    import Vector3D = Pan3d.Vector3D
+    import Scene_data = Pan3d.Scene_data
 
     export class MeshToObjUtils {
 
-        public getObj(mesh: Md5MeshData): ObjData {
-            var objData: ObjData = new ObjData;
+        public getObj(mesh: Md5MeshData): MeshData {
+            var objData: MeshData = new MeshData;
             objData.vertices = new Array;
             objData.uvs = new Array;
             objData.normals = new Array;

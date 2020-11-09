@@ -1,4 +1,12 @@
 ﻿
+import Scene_data=Pan3d.Scene_data;
+import MouseType=Pan3d.MouseType;
+import InteractiveEvent=Pan3d.InteractiveEvent;
+import Vector2D=Pan3d.Vector2D;
+import UIManager=Pan3d.UIManager;
+
+
+
 class Md5MouseManager {
     private static _instance: Md5MouseManager;
     public static getInstance(): Md5MouseManager {
