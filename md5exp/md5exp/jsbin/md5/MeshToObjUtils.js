@@ -75,11 +75,11 @@ var md5list;
                 mapkeyAry.push(index);
             }
             var resultAry = new Array; //最终更新的数据
-            for (i = 0; i < newTargetAry.length; i++) {
+            for (i = 0; i < newTargetAry.length; i++) { //数据复制
                 var $kkkk = newTargetAry[i];
                 resultAry.push($kkkk.clone());
             }
-            for (i = 0; i < resultAry.length; i++) {
+            for (i = 0; i < resultAry.length; i++) { //从映射关系更新父级id
                 index = resultAry[i].father;
                 if (index != -1) {
                     resultAry[i].father = mapkeyAry[index];

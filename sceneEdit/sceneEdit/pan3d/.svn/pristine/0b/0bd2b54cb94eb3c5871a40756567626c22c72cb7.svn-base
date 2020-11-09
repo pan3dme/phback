@@ -1,0 +1,239 @@
+﻿module Pan3d {
+    export class SceneChar extends SceneBaseChar {
+        public _speedDirect: Vector3D;
+        public speedTX: number = 1.5 / 20;
+        public life: number = 0;
+
+        protected _walkPath: Array<Vector3D>;
+        private _astarDirect: Vector3D;
+        private _astatTopos: Vector3D;
+        public skillitem: Array<Skill>;//存放着角色的技能;
+
+        public unit: Unit;
+        public mountChar: MountChar;
+        public isMount: boolean = false;
+
+        public static WEAPON_PART: string = "weapon";
+        public static WEAPON_DEFAULT_SLOT: string = "w_01";
+        public static MOUNT_SLOT: string = "mount_01";
+        public static WING_SLOT: string = "wing_01";
+        public static SEL_PART: string = "select";
+        public static QUEST_ICON: string = "questicon";
+        public static NONE_SLOT: string = "none";
+
+        protected _px: number = 0;
+        protected _py: number = 0;
+        protected _pz: number = 0;
+        private _pRotationY: number = 0;
+        private _isBoss: boolean = false;
+
+        private _optimization: boolean = false;//当优化为true的时候 不显示
+
+        public constructor() {
+            super();
+            this.shadow = true;
+            this.skillitem = new Array();
+        }
+        public get isDeath(): boolean {
+            return false
+        }
+        public get isBoss(): boolean {
+            return this._isBoss;
+        }
+        public set isBoss(val: boolean) {
+            this._isBoss = val;
+        }
+        public get px(): number {
+            return this._px;
+        }
+        public set px(val: number) {
+            this._px = val;
+            if (this.isMount) {
+                this.mountChar.x = val;
+                if (this._shadow) {
+                    this._shadow.x = val;
+                }
+            } else {
+                this.x = val;
+            }
+        }
+        public get py(): number {
+            return this._py;
+        }
+        public set py(val: number) {
+            this._py = val;
+            if (this.isMount) {
+                this.mountChar.y = val;
+                if (this._shadow) {
+                    this._shadow.y = val;
+                }
+            } else {
+                this.y = val;
+            }
+        }
+        public get pz(): number {
+            return this._pz;
+        }
+        public set pz(val: number) {
+            this._pz = val;
+            if (this.isMount) {
+                this.mountChar.z = val;
+                if (this._shadow) {
+                    this._shadow.z = val;
+                }
+            } else {
+                this.z = val;
+            }
+
+
+        }
+        /**强制角度 */
+        public set forceRotationY(val: number) {
+            this.pRotationY = val;
+            this.rotationY = val;
+  
+        }
+
+        public get pRotationY(): number {
+            return this._pRotationY;
+        }
+        public set pRotationY(val: number) {
+            this._pRotationY = val;
+            if (this.isMount) {
+                this.mountChar.rotationY = val;
+            } else {
+                this.rotationY = val;
+            }
+        }
+        public play($action: string, $completeState: number = 0, needFollow: boolean = true): boolean {
+
+
+            if (this.isSinging) {
+                $completeState = 0;//吟唱时动作状态成为2;
+                if ($action == CharAction.WALK || $action == CharAction.STANAD) {
+                    return true;
+                }
+            }
+
+            if (this.isMount) {
+
+                this.mountChar.visible = Boolean($action != CharAction.JUMP)
+                if ($action == CharAction.STANAD) {
+                    super.play(CharAction.STAND_MOUNT);
+                } else if ($action == CharAction.WALK) {
+                    super.play(CharAction.WALK_MOUNT);
+                } else {
+                    if (this.mountChar.visible) {
+                        super.play(CharAction.STAND_MOUNT);
+                    } else {
+                        super.play(CharAction.JUMP);
+                    }
+
+                }
+                return this.mountChar.play($action, $completeState, needFollow);
+            } else {
+                return super.play($action, $completeState, needFollow)
+            }
+            // if (this.unit && this.unit.isMain) {
+            //     if (this.isMount) {
+            //         //console.log("有坐骑")
+            //     } else {
+            //         //console.log("无坐骑") 
+            //     }
+            // }
+        }
+
+
+        public getCurrentAction(): string {
+            if (this.isMount) {
+                return this.mountChar.curentAction;
+            } else {
+                return this.curentAction;
+            }
+        }
+
+
+        protected getSceneCharAvatarUrl(num: number): string {
+
+            var $tempNum: string = String(num)
+            if (num == 0) {
+                //console.log("衣服为0")
+                throw new Error("衣服为getSceneCharAvatarUrl");
+            }
+            var $url: string = getRoleUrl($tempNum);
+            return $url
+        }
+        public static Defaul_Man_Avatar: number = 2002//男
+        public static Defaul_WoMan_Avater: number = 2012//女
+        public setMount(): void {
+
+            
+        }
+      
+
+     
+
+        public getCurrentPos(): Vector3D {
+            return new Vector3D(this.px, this.py, this.pz);
+        }
+        public getAstarPos(): Vector2D {
+            return AstarUtil.getGrapIndexByPos(this.getCurrentPos())
+        }
+        private _wingID: number = -1;
+        protected _wingDisplay: SceneBaseChar;
+        public setWing(): void {
+            
+        }
+
+        protected changeAction($action: string): void {
+
+            if (this.unit.isMain) {
+                switch ($action) {
+                    case CharAction.ATTACK_01:
+                        this.play(CharAction.ATTACK_010, 2);
+                        break;
+                    case CharAction.ATTACK_02:
+                        this.play(CharAction.ATTACK_020, 2);
+                        break;
+                    default:
+                        super.changeAction($action)
+                        break;
+                }
+            } else {
+                super.changeAction($action)
+            }
+
+        }
+
+        public skillVo: Skill;
+
+        public playSkill($skill: Skill): void {
+
+            this._walkPath = null;
+            SkillManager.getInstance().playSkill($skill);
+            this.skillVo = $skill;
+        }
+     
+
+
+        public watch($obj: Display3D, $syn: boolean = false): void {
+            if (!$obj) {
+                //console.log("面向对象无")
+                return;
+            }
+            var xx: number = $obj.x - this.px;
+            var yy: number = $obj.z - this.pz;
+            var distance: number = Math.sqrt(xx * xx + yy * yy);
+            xx /= distance;
+            yy /= distance;
+            var angle: number = Math.asin(xx) / Math.PI * 180;
+            if (yy <= 0) {
+                angle = 180 - angle;
+            }
+            if (!isNaN(angle)) {
+                this.forceRotationY = angle
+            }
+        }
+    }
+
+}

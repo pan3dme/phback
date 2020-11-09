@@ -1,0 +1,42 @@
+{"list":[
+ 
+{"id":0 ,"name":"根目录","perent":-1},
+{"id":1 ,"name":"模型列表","perent":0},
+{"id":2 ,"name":"骨胳文件","perent":0},
+{"id":3 ,"name":"地图","perent":0},
+{"id":4 ,"name":"材质目录","perent":0},
+
+{"id":10 ,"name":"ccave11","perent":1},
+{"id":11 ,"name":"ccave12","perent":1},
+{"id":12 ,"name":"ccave13","perent":1},
+{"id":13 ,"name":"ccave14","perent":1},
+
+
+{"id":20 ,"name":"ccave22","perent":2},
+{"id":21 ,"name":"ccave21","perent":2},
+{"id":22 ,"name":"ccave22","perent":2},
+{"id":23 ,"name":"ccave23","perent":2},
+
+
+{"id":30 ,"name":"ccave32","perent":3},
+{"id":31 ,"name":"ccave31","perent":3},
+{"id":32 ,"name":"ccave32","perent":3},
+{"id":33 ,"name":"ccave33","perent":3},
+{"id":34 ,"name":"ccave34","perent":3},
+{"id":35 ,"name":"ccave35","perent":3},
+{"id":36 ,"name":"ccave36","perent":3},
+{"id":37 ,"name":"ccave37","perent":3},
+{"id":38 ,"name":"ccave38","perent":3},
+{"id":39 ,"name":"ccave39","perent":3},
+ 
+
+{"id":40 ,"name":"ccave42","perent":4},
+{"id":41 ,"name":"ccave41","perent":4},
+{"id":42 ,"name":"ccave42","perent":4},
+{"id":43 ,"name":"ccave43","perent":4},
+
+
+
+{"id":5 ,"name":"ccave1","perent":0}
+
+]}

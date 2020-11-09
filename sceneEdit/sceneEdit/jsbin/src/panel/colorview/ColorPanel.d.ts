@@ -1,0 +1,54 @@
+declare module colorview {
+    import UIRenderComponent = Pan3d.UIRenderComponent;
+    import InteractiveEvent = Pan3d.InteractiveEvent;
+    import Vector3D = Pan3d.Vector3D;
+    import UIPanel = win.UIPanel;
+    class ColorPanel extends UIPanel {
+        _bottomRender: UIRenderComponent;
+        _midRender: UIRenderComponent;
+        _topRender: UIRenderComponent;
+        constructor();
+        applyLoad(): void;
+        private c_tittle;
+        private c_mainper;
+        private c_out_color;
+        private c_color_txt_bg;
+        private c_close;
+        private loadConfigCom;
+        private c_text_r;
+        private c_text_g;
+        private c_text_b;
+        private c_text_a;
+        private c_text_info;
+        private c_pickImg;
+        private _currentMainPer;
+        private _perX;
+        private _perY;
+        private changeFun;
+        initColor(value: Vector3D, $bfun: Function): void;
+        private showColor;
+        private showColorTxt;
+        private getHtxColor;
+        private drawStrToUi;
+        private drawOutColor;
+        protected onUiStageUp(evt: InteractiveEvent): void;
+        protected onMainColorMove(evt: InteractiveEvent): void;
+        private _outColorVect;
+        private onPanelColorMove;
+        rgb2hsb(color: Vector3D): Vector3D;
+        private mainColor;
+        private changePanelColor;
+        argbToHex16(r: number, g: number, b: number): number;
+        private c_panel_color;
+        private drawPanelColor;
+        private maincary;
+        private drawMainColor;
+        private c_main_color;
+        protected butClik(evt: InteractiveEvent): void;
+        private lastPanelPos;
+        private mouseXY;
+        private addStageMoveEvets;
+        private onMove;
+        private onUp;
+    }
+}

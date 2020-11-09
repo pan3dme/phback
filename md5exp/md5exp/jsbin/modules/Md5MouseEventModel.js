@@ -18,7 +18,7 @@ var Md5MouseEventModel = /** @class */ (function () {
         document.addEventListener(MouseType.MouseWheel, function ($evt) { _this.onMouseWheel($evt); });
     };
     Md5MouseEventModel.prototype.onMouseWheel = function ($evt) {
-        Scene_data.cam3D.distance += $evt.wheelDelta / 10;
+        // Scene_data.cam3D.distance += $evt.wheelDelta/10
     };
     Md5MouseEventModel.prototype.onMouseMove = function ($evt) {
         if (this._isMouseDown) {

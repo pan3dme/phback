@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{2A9562D5-24A0-4F44-94C5-EADCD36C5804}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="sceneEdit/src/base/md5/Md5animAnalysis.ts">
+    <Files>
+      <File FileName="sceneEdit/src/ModuleList.ts" Line="1" Column="1" />
+      <File FileName="sceneEdit/index.html" Line="20" Column="1" />
+      <File FileName="sceneEdit/pan3d/engine/context/Scene_data.ts" Line="1" Column="1" />
+      <File FileName="sceneEdit/pan3d/engine/Engine.ts" Line="14" Column="41" />
+      <File FileName="sceneEdit/src/base/modelshow/LocalMd5MoveSprite.ts" Line="18" Column="47" />
+      <File FileName="sceneEdit/src/base/md5/Md5animAnalysis.ts" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="sceneEdit" expanded="True">
+            <Node name="sceneEdit" expanded="True">
+              <Node name="pan3d" expanded="True">
+                <Node name="engine" expanded="True">
+                  <Node name="context" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="src" expanded="True">
+                <Node name="base" expanded="True">
+                  <Node name="md5" expanded="True">
+                    <Node name="Md5animAnalysis.ts" selected="True" />
+                  </Node>
+                  <Node name="modelshow" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.sceneEdit PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

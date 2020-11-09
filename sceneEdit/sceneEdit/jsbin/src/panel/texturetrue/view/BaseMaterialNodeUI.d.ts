@@ -1,0 +1,55 @@
+declare module materialui {
+    import UIAtlas = Pan3d.UIAtlas;
+    import UICompenent = Pan3d.UICompenent;
+    import FrameCompenent = Pan3d.FrameCompenent;
+    import InteractiveEvent = Pan3d.InteractiveEvent;
+    import UIRenderComponent = Pan3d.UIRenderComponent;
+    import UIPanel = win.UIPanel;
+    class BaseMaterialNodeUI extends UIPanel {
+        _bottomRender: UIRenderComponent;
+        _midRender: UIRenderComponent;
+        _labelRender: UIRenderComponent;
+        _topRender: UIRenderComponent;
+        protected inPutItemVec: Array<ItemMaterialUI>;
+        protected outPutItemVec: Array<ItemMaterialUI>;
+        protected _container: PanelContainer;
+        nodeTree: NodeTree;
+        protected gap: number;
+        name: string;
+        static baseUIAtlas: UIAtlas;
+        constructor();
+        setInItemByData(ary: Array<any>): void;
+        setOutItemByData(ary: Array<any>): void;
+        setData(obj: any): void;
+        getData(): Object;
+        getObj(): Object;
+        protected resetBgSize(): void;
+        private a_select_line;
+        private a_panel_title_frame;
+        static titleFrameId: number;
+        protected loadConfigCom(): void;
+        tittleStr: string;
+        protected drawTitleToFrame($str: string): void;
+        private drawTextToName;
+        addItems($nodeUI: ItemMaterialUI): void;
+        removeItem($nodeUI: ItemMaterialUI): void;
+        refreshNodePos(): void;
+        removeAllNodeLine(): void;
+        protected a_tittle_bg: FrameCompenent;
+        protected a_cell_base_bg: UICompenent;
+        protected butClik(evt: InteractiveEvent): void;
+        getInItem($id: number): ItemMaterialUI;
+        getOutItem($id: number): ItemMaterialUI;
+        clikUiEvent($mouseEvt: InteractiveEvent): void;
+        private getPointFrameTagetFoItemVec;
+        private lastPanelPos;
+        private mouseXY;
+        private addStageMoveEvets;
+        private onMove;
+        drawLine(): void;
+        private onUp;
+        private _select;
+        select: boolean;
+        showDynamic(): void;
+    }
+}
