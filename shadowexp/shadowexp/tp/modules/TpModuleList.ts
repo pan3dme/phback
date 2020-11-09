@@ -6,7 +6,10 @@
         return [
             new TpSceneModule(),
         ];
+
+
     }
+
 
     /**
      * 启动所有模块 

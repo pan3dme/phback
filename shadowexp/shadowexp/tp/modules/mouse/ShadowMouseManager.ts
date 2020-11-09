@@ -21,6 +21,7 @@ class GameMouseManager {
             document.addEventListener(MouseType.TouchStart, ($evt: TouchEvent) => { this.mouseToEvent($evt) });
         }
 
+
     }
   
 
@@ -81,16 +82,11 @@ class GameMouseManager {
     private clikSceneGround($pos: Vector2D): void
     {
  
-
-
     }
     public walkPathComplete(): void {
 
 
     }
-
-
-
-
+ 
 
 }
