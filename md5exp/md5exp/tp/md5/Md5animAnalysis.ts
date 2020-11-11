@@ -50,8 +50,8 @@ module md5list {
             this._frame = new Array();
             this.bigArr = new Array();
             //var ini:String = urlloader.data;
-
-            var arr: Array<string> = ini.split("\r\n");
+            ini=ini.replace("\t","");
+            var arr: Array<string> = ini.split("\n");
 
             var len: number = arr.length;
             var tempStr: string = "";

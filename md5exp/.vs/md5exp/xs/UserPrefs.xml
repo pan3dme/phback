@@ -1,12 +1,27 @@
 ﻿<Properties StartupConfiguration="{2A9562D5-24A0-4F44-94C5-EADCD36C5804}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="md5exp/index.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="md5exp/tp/md5/Md5MoveSprite.ts">
     <Files>
-      <File FileName="md5exp/index.html" Line="36" Column="44" />
+      <File FileName="md5exp/index.html" Line="33" Column="55" />
+      <File FileName="md5exp/tp/md5/Md5MeshSprite.ts" Line="81" Column="45" />
+      <File FileName="md5exp/tp/md5/Md5Analysis.ts" Line="27" Column="1" />
+      <File FileName="md5exp/tp/TpGame.ts" />
+      <File FileName="md5exp/tp/md5/Md5animAnalysis.ts" Line="90" Column="50" />
+      <File FileName="md5exp/tp/md5/MeshImportSort.ts" Line="1" Column="1" />
+      <File FileName="md5exp/tp/md5/MeshToObjUtils.ts" Line="1" Column="1" />
+      <File FileName="md5exp/tp/md5/Md5MoveSprite.ts" Line="26" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="md5exp" expanded="True" selected="True" />
+          <Node name="md5exp" expanded="True">
+            <Node name="md5exp" expanded="True">
+              <Node name="tp" expanded="True">
+                <Node name="md5" expanded="True">
+                  <Node name="Md5MoveSprite.ts" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

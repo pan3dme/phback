@@ -20,8 +20,8 @@ module md5list {
                 var meshSmaple: Dictionary = new Dictionary([]);
 
 
-
-                arr = str.split(/[\n\r]{2}/);
+                str=str.replace("\t","");
+                arr = str.split("\n");
 
                 var numverts: Boolean = false;
 
